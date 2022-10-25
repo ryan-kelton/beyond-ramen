@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ryan Kelton">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Beyond Ramen</title>
+        <link rel="stylesheet" href="recipeStyles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/meo7rtr.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="../Assets/Logo.svg" alt="Beyond Ramen logo" width="100px">
+                    <h1></h1>
+                </a>
+            </div>
+            <nav>
+                <h2>Navigation</h2>
+                <img src="../assets/menu_black_24dp.svg" alt="Hambruger menu" id="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hide" id="exit" viewBox="-6 -6 24 24" width="24" fill="currentColor"><path d="M7.314 5.9l3.535-3.536A1 1 0 1 0 9.435.95L5.899 4.485 2.364.95A1 1 0 1 0 .95 2.364l3.535 3.535L.95 9.435a1 1 0 1 0 1.414 1.414l3.535-3.535 3.536 3.535a1 1 0 1 0 1.414-1.414L7.314 5.899z"></path></svg>
+                <p id="printOnly">
+                    https://www.public.asu.edu/~rkelton1/Recipe/code/recipe.html
+                </p>
+                <ul id="navUL">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"  class="active"><li>Recipe Book</li></a>
+                    <a href="#"><li>Post A Recipe</li></a>
+                    <a href="#"><li>Sign up&#47 Login in</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!--Secondary Navigation-->
+            <div id="secondaryNav">
+                <div id="backArrow">
+                    <img src="../assets/keyboard_backspace_black_24dp.svg" alt="Back arrow">
+                    <a href="index.html">Back</a>
+                </div>
+                <div id="pinShare">
+                    <img src="../assets/push_pin_black_24dp.svg" alt="Pin">
+                    <img src="../assets/ios_share_black_24dp.svg" alt="share">
+                </div>
+            </div>
+
+            <!--Recipe-->
+            <article itemscope itemtype="https://schema.org/Recipe" id="gridContainer">
+                <h2>Tuna and caper pasta with crispy breadcrumbs</h2>
+
+                <!--Introduction information-->
+                <div id="dishImg">
+                    <img src="../Assets/Recipe Images/Tuna.jpeg" alt="tuna caper dish">
+                </div>
+                <div id="quickFacts">
+                    <div id="difficulty">
+                        <div id="checkMark"></div>
+                            <div class="factsText">
+                                <p>Difficulty</p>
+                                <p>Easy</p>
+                            </div>
+                    </div>
+                    <div id="totalTime">
+                        <img src="../assets/schedule_black_24dp.svg" alt="Clock icon">
+                        <div class="factsText">
+                            <p>Total Time</p>
+                            <meta itemprop="totalTime" content="PT30M">30 min
+                        </div>
+                    </div>
+                    <div id="recipeYield">
+                        <img src="../assets/restaurant_menu_black_24dp.svg" alt="Utensils icon">
+                        <div class="factsText">
+                            <p>Serves</p>
+                            <p itemprop="recipeYield">4</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="recipeName">
+                    <p itemprop="name">Tuna and caper pasta with crispy breadcrumbs</p>
+                    <div id="reviews">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        <a href="#">5 reviews</a>
+                    </div>
+                    <div id="author">
+                        <img src="../Assets/abdrahim-oulfakir.jpg" 
+                        alt="Author" width="200" 
+                        itemprop="image" class="authorProfile">
+                        <div>
+                            <p itemprop="author">Abdrahim Oulfakir</p>
+                            <p itemprop="datePublished" content="2021-09-23">Sept 23, 2021</p>
+                        </div>
+                    </div>
+                    <div class="recipeTags">
+                        <a href="#">#Lunch</a>
+                        <a href="#">#Dinner</a>
+                        <a href="#">#Quick & Easy</a>
+                    </div>
+                </div>
+                <div id="dietaryInfo" itemprop="nutrition">
+                    <p itemprop="calories" id="calories">
+                        <b>270</b><br> Calories</p>
+                    <p itemprop="carbohydrateContent" id="carbs">
+                        <b>35g</b><br> Carbs</p>
+                    <p itemprop="proteinContent" id="protein">
+                        <b>6.8g</b><br> Protein</p>
+                    <p itemprop="sugarContent" id="sugar">
+                        <b>0g</b><br> Sugar</p>
+                </div>
+
+                <!--Ingredients-->
+                <section id="ingredientsGrid">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li itemprop="recipeIngredient">150ml extra virgin olive oil</li>
+                            <li itemprop="recipeIngredient">1 cup (70g) coarse day-old breadcrumbs</li>
+                            <li itemprop="recipeIngredient">2 tsp dried Italian herbs</li>
+                            <li itemprop="recipeIngredient">2 garlic cloves, finely chopped</li>
+                            <li itemprop="recipeIngredient">2 tsp fennel seeds</li>
+                            <li itemprop="recipeIngredient">1/3 cup (65g) capers in vinegar, drained</li>
+                            <li itemprop="recipeIngredient">1/2 tsp chilli flakes</li>
+                            <li itemprop="recipeIngredient">3 x 95g cans good-quality tuna in oil</li>
+                            <li itemprop="recipeIngredient">Finely grated zest and juice of 1 1/2 lemons, or more to taste</li>
+                            <li itemprop="recipeIngredient">300g angel hair pasta, cooked to packet instructions</li>
+                        </ul>  
+                </section>
+
+                <!--Instructions-->
+                <section id="instructionsGrid">
+                        <h3>Instructions</h3>
+                        <ol>
+                            <li itemprop="recipeInstructions">Heat half the oil in a non-stick frypan over medium heat.</li>
+                            <li itemprop="recipeInstructions">Add breadcrumbs and dried herbs.</li>
+                            <li itemprop="recipeInstructions"> Cook, stirring, for 4-5 minutes until crisp and golden.</li>
+                            <li itemprop="recipeInstructions">Transfer to a bowl and set aside.</li>
+                            <li itemprop="recipeInstructions">Wipe pan clean and return to medium heat.</li>
+                            <li itemprop="recipeInstructions">Add remaining 75ml oil then add garlic and fennel seeds.</li>
+                            <li itemprop="recipeInstructions">Cook, stirring, for 2-3 minutes until fragrant and garlic has softened.</li>
+                            <li itemprop="recipeInstructions">Add capers, chilli flakes, tuna and tuna oil, lemon zest and juice, and stir for 1 minute to heat through.</li>
+                            <li itemprop="recipeInstructions"> Stir pasta through the sauce and season. Scatter with crispy breadcrumbs to serve.</li>
+                        </ol>  
+                </section>
+
+                <!--Buttons-->
+                <div id="CTA">
+                    <button id="print" onclick="window.print()">Print Recipe</button>
+                </div>
+
+                <!--Student Reviews-->
+                <section id="studentReviews">
+                    <h3>Student Reviews</h3>
+                    <div id="totalRating">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        <p>Based on 5 reviews</p>
+                    </div>
+
+                    <div class="reviewContainer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        <p><strong>Jeffery Stuart</strong> | 10/23/21</p>
+                        <p>I never thought about using this process, but it works great.</p>
+                    </div>
+                    <div class="reviewContainer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        <p><strong>Jeffery Stuart</strong> | 10/23/21</p>
+                        <p>I never thought about using this process, but it works great.</p>
+                    </div>
+                    <div class="reviewContainer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        <p><strong>Jeffery Stuart</strong> | 10/23/21</p>
+                        <p>I never thought about using this process, but it works great.</p>
+                    </div>
+                    <div class="reviewContainer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        <p><strong>Jeffery Stuart</strong> | 10/23/21</p>
+                        <p>I never thought about using this process, but it works great.</p>
+                    </div>
+                    <div class="reviewContainer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        <p><strong>Jeffery Stuart</strong> | 10/23/21</p>
+                        <p>I never thought about using this process, but it works great.</p>
+                    </div>
+                </section>
+                <form id="writeReview">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2.5 24 24" width="24" fill="#FFA700"><path d="M10 13.554l3.517 1.85-.672-3.917 2.846-2.774-3.932-.571L10 4.579 8.241 8.142l-3.932.571 2.846 2.774-.672 3.916L10 13.554zm0 2.26L3.827 19.06l1.179-6.875L.01 7.317l6.902-1.003L10 .06l3.087 6.254 6.902 1.003-4.995 4.868 1.18 6.875L10 15.814z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2.5 24 24" width="24" fill="#FFA700"><path d="M10 13.554l3.517 1.85-.672-3.917 2.846-2.774-3.932-.571L10 4.579 8.241 8.142l-3.932.571 2.846 2.774-.672 3.916L10 13.554zm0 2.26L3.827 19.06l1.179-6.875L.01 7.317l6.902-1.003L10 .06l3.087 6.254 6.902 1.003-4.995 4.868 1.18 6.875L10 15.814z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2.5 24 24" width="24" fill="#FFA700"><path d="M10 13.554l3.517 1.85-.672-3.917 2.846-2.774-3.932-.571L10 4.579 8.241 8.142l-3.932.571 2.846 2.774-.672 3.916L10 13.554zm0 2.26L3.827 19.06l1.179-6.875L.01 7.317l6.902-1.003L10 .06l3.087 6.254 6.902 1.003-4.995 4.868 1.18 6.875L10 15.814z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2.5 24 24" width="24" fill="#FFA700"><path d="M10 13.554l3.517 1.85-.672-3.917 2.846-2.774-3.932-.571L10 4.579 8.241 8.142l-3.932.571 2.846 2.774-.672 3.916L10 13.554zm0 2.26L3.827 19.06l1.179-6.875L.01 7.317l6.902-1.003L10 .06l3.087 6.254 6.902 1.003-4.995 4.868 1.18 6.875L10 15.814z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2.5 24 24" width="24" fill="#FFA700"><path d="M10 13.554l3.517 1.85-.672-3.917 2.846-2.774-3.932-.571L10 4.579 8.241 8.142l-3.932.571 2.846 2.774-.672 3.916L10 13.554zm0 2.26L3.827 19.06l1.179-6.875L.01 7.317l6.902-1.003L10 .06l3.087 6.254 6.902 1.003-4.995 4.868 1.18 6.875L10 15.814z"></path></svg>
+                    <div class="nameInput">
+                        <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="commentInput">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" name="comment" placeholder="Type your comment here..."></textarea>
+                    </div>
+                    <button type="submit">Post</button>
+                </form>
+            </article>
+
+            <footer>
+                <small>&copy; Ryan Kelton</small>
+                <p><b>Assignment 4 &#45; Recipe</b></p>
+                <p>Recipe taken from 
+                    <a href="https://www.delicious.com.au/recipes/tuna-caper-pasta-crispy-breadcrumbs-recipe/m6nfpnbl?r=recipes/collections/1vo4q819" target="_blank">Phoebe Wood</a> 
+                </p>
+            </footer>
+        </main>
+    </body>
+</html>

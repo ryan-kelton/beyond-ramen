@@ -1,0 +1,535 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Green: #6B9B03;
+    --Border: #C5C5C5;
+    --Black: #29282F;
+    --BG-2: #F5F5F5;
+    --BG: #FCFCFC;
+}
+html{
+    font-size: 16px;
+    font-family: "Highgate", sans-serif;
+    color: var(--Black);
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--BG);
+}
+a{
+    color: var(--Black);
+    text-decoration: underline;
+    transition: ease-in-out(.5s);
+}
+a:hover{
+    transform-origin: center;
+    transform:scale(1.01);
+}
+h2, nav ul, #printOnly{
+    display: none;
+}
+button{
+    font-family: "Highgate", sans-serif;
+    font-weight: 500;
+    border: none;
+    font-size: 17px;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 5px;
+    background-color: var(--Green);
+}
+.active{
+    font-weight: 700;
+}
+
+/*--Header--*/
+header{
+    display: flex;
+    padding: 1rem 2rem;
+    border-bottom: 2.5px solid var(--Border);
+}
+#logo{
+    display: inline-flex;
+    align-items: center;
+    flex-grow: 2;
+}
+#logo h1{
+    padding-left: .75rem;
+    font-size: 1.5rem;
+}
+#logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+nav{
+    display: inline-flex;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+}
+.hamburgerActive{
+    display: block;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    background-color: var(--BG);
+    width: 100%;
+    padding: 2rem;
+    transition: ease-in-out;
+}
+.hamburgerActive li{
+    padding: 10px;
+}
+/*--End Header--*/
+
+/*--Secondary Navigation--*/
+#secondaryNav{
+    display: flex;
+    padding: .5rem 2rem;
+    align-items: center;
+}
+#backArrow{
+    display: inline-flex;
+    align-items: center;
+    flex-grow: 2;
+}
+#backArrow a{
+    text-decoration: none;
+}
+#pinShare{
+    display: inline-flex;
+    align-items: center;
+}
+#pinShare img{
+    padding: .75rem;
+}
+#pinShare img:last-child{
+    padding-right: 0;
+}
+/*--End Secondary Navigation--*/
+
+/*--Grid Container--*/
+#gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "dishImg"
+        "quickFacts"
+        "recipeName"
+        "dietaryInfo"
+        "ing"
+        "ins"
+        "cta"
+        "studentReviews"
+        "writeReview"
+    ;
+}
+/*--End Grid Container--*/
+
+/*--Main Image--*/
+#dishImg{
+    grid-area: dishImg;
+    max-height: 500px;
+    width: 100%;
+}
+#dishImg img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+/*--End Main Image--*/
+
+/*--Quick Facts--*/
+#quickFacts{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--BG-2);
+    justify-content: center;
+    padding: 1.5rem 0;
+    grid-area: quickFacts; 
+}
+#checkMark{
+    width: 1.5rem;
+    height: .75rem;
+    border-left: 2.5px solid var(--Green);
+    border-bottom: 2.5px solid var(--Green);
+    transform: rotate(-45deg);
+    margin-top: -1rem;
+}
+#difficulty, #totalTime, #recipeYield{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+.factsText{
+    margin-left: .75rem;
+}
+.factsText p:first-child{
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .035rem;
+    margin-bottom: -.25rem;
+}
+#quickFacts div:last-child{
+    font-weight: 700;
+}
+/*--End Quick Facts--/
+
+/*--Recipe Name--*/
+#recipeName{
+    padding: 2rem 2rem 2rem 3rem;
+    grid-area: recipeName;
+}
+#recipeName > p{
+    font-weight: 700;
+    font-size: 2rem;
+}
+#reviews{
+    display: inline-flex;
+    margin-top: 1.25rem;
+    align-items: center;
+}
+#reviews a{
+    margin-left: .75rem;
+}
+#author{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+#author p{
+    font-weight: 700;
+}
+#author p:last-child{
+    font-weight: 400;
+}
+.authorProfile{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100px;
+    margin-right: .75rem;
+}
+.recipeTags{
+    margin-top: 1.5rem;
+}
+.recipeTags a{
+    padding-right: 10px;
+    text-decoration: none;
+}
+.recipeTags a:hover{
+    text-decoration: underline;
+}
+/*--End Recipe Name--/
+
+/*--Dietary Info--*/
+#dietaryInfo{
+    background-color: var(--Black);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 1.5rem;
+    margin: 0 2rem;
+    border-radius: 5px;
+    grid-area: dietaryInfo;
+}
+#dietaryInfo p{
+    padding: .5rem;
+    font-size: 1.2rem;
+    color: #D8D8D8;
+    text-align: center;
+    line-height: 1.5rem;
+}
+#dietaryInfo b{
+    color: white;
+}
+/*--End Dietary Info--*/
+
+/*--Ingredients and Instructions--*/
+#ingredientsGrid{
+    grid-area: ing;
+    background-color: var(--BG-2);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 5px;
+    font-size: 1.50rem;
+}
+#ingredientsGrid ul{
+    margin: 1rem 0 0 1rem;
+    font-size: 1.25rem;
+    max-width: 50ch;
+}
+#instructionsGrid{
+    grid-area: ins;
+    padding: 0 2rem;
+    margin: 2rem;
+    border-radius: 5px;
+    font-size: 1.50rem;
+}
+#instructionsGrid ol{
+    margin: 1rem 0 0 0;
+    font-size: 1.25rem;
+    max-width: 50ch;
+}
+#ingredientsGrid li, #instructionsGrid li{
+    padding: 0 0 .75rem 0;
+}
+/*--End Ingredients and Instructions--*/
+
+/*--Instructions Ordered List--*/
+ol{
+    list-style: none;
+    counter-reset: new-counter;
+}
+ol li{
+    counter-increment: new-counter;
+}
+ol li::before{
+    content: counter(new-counter)". ";
+    color: var(--Green);
+    font-weight: 700;
+}
+/*--End Instructions Ordered List--*/
+
+/*--Buttons--*/
+#CTA{
+    grid-area: cta;
+    margin: 0 2rem;
+    border-bottom: 2px solid var(--Border);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+#print:hover{
+    cursor: pointer;
+}
+/*--End Buttons--*/
+
+/*--Student Reviews--*/
+#studentReviews{
+    margin: 0rem 2rem 0rem 2rem;
+    grid-area: studentReviews;
+}
+#studentReviews h3{
+    font-size: 1.25rem;
+}
+#totalRating{
+    display: flex;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1.5px solid var(--Border);
+}
+#totalRating p{
+    padding-left: .5rem;
+}
+.reviewContainer{
+    margin-bottom: 1rem;
+}
+.reviewContainer:last-of-type{
+    border-bottom: 1.5px solid var(--Border);
+    padding-bottom: 2rem;
+}
+form{
+    margin: 0 2rem;
+    grid-area: writeReview;
+}
+.nameInput{
+    margin-top: 0.25rem;
+}
+input, textarea{
+    display: flex;
+    margin: 0.25rem 0 1rem 0;
+    padding: .25rem;
+    font-size: 16px;
+    font-family: "Highgate", sans-serif;
+}
+textarea{
+    width: 100%;
+    max-width: 400px;
+    height: 10rem;
+}
+/*--End Student Reviews--*/
+
+/*--Footer--*/
+footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem;
+}
+small, footer p{
+    font-size: 1rem;
+    padding: 0 .5rem;
+}
+footer a{
+    color: var(--Green);
+    text-decoration: underline;
+}
+/*--End Footer--*/
+
+.hide{
+    display: none;
+}
+
+/*--Media Query's--*/
+@media screen and (min-width: 725px){
+    nav ul{
+        display: contents;
+        list-style: none;
+    }
+    ul a{
+        text-decoration: none;
+        padding-left: 1.25rem;
+    }
+    ul a:hover{
+        text-decoration: underline;
+    }
+    nav img{
+        display: none;
+    }
+    nav img{
+        display: none;
+    }
+}
+@media screen and (min-width: 1000px){
+    html{
+        font-size: 17px;
+    }
+    #dishImg{
+        margin-bottom: 25px;
+    }
+    #recipeName{
+        color: var(--Black);
+        grid-area: recipeName;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #gridContainer{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas:
+            "dishImg dishImg dishImg recipeName recipeName"
+            "quickFacts quickFacts dietaryInfo dietaryInfo dietaryInfo"
+            "ing ing ins ins ins"
+            "cta cta cta cta cta"
+            "studentReviews studentReviews writeReview writeReview writeReview"
+        ;
+    }
+    #quickFacts, #dietaryInfo{
+        padding: .5rem;
+        border-radius: 5px;
+    }
+    #dietaryInfo{
+        border-radius: 0;
+        margin: 0;
+    }
+    #instructionsGrid{
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 1250px){
+    header, #secondaryNav{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #quickFacts{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    #dietaryInfo{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    #ingredientsGrid{
+        margin-left: 0;
+    }
+    #instructionsGrid{
+        margin-right: 0;
+    }
+    #CTA{
+        margin-left: 0;
+    }
+    #studentReviews{
+        margin-left: 0;
+    }
+}
+/*--Print--*/
+@media print{
+    html{
+        filter: grayscale(100);
+        font-size: 10px;
+    }
+    nav img, nav ul, #secondaryNav, .authorProfile, #CTA{
+        display: none;
+    }
+    
+    header{
+        padding: 0;
+        border-bottom: none;
+    }
+    #logo{
+        margin-bottom: 10px;
+    }
+    #printOnly{
+        display: block;
+        float: right;
+    }
+    
+    #gridContainer{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+            "dishImg recipeName"
+            "quickFacts dietaryInfo"
+            "ing ins"
+            "studentReviews writeReview"
+        ;
+    }
+
+    #dishImg{
+        height: 200px;
+        filter: brightness(90%);
+    }
+    #recipeName{
+        margin: 0;
+        color: black;
+        grid-area: recipeName;
+        margin-top: 20px;
+    }
+    
+    #quickFacts{
+        background: initial;
+        border-radius: 0;
+        padding: .5rem;
+        margin-top: 1rem;
+    }
+    #dietaryInfo{
+        background: initial;
+        border-radius: 0;
+        padding: .5rem;
+        margin-top: 1rem;
+    }
+    #dietaryInfo p, #dietaryInfo b{
+        color: black;
+    }
+    #ingredientsGrid, #instructionsGrid{
+        background-color: initial;
+    }
+    
+    footer{
+        justify-content: flex-start;
+    }
+    a[href]::after{
+        content: " ("attr(href)")";
+    }
+}

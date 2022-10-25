@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ryan Kelton">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Beyond Ramen</title>
+        <link rel="stylesheet" href="indexStyles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/meo7rtr.css">
+        <script src="script.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="../Assets/Logo.svg" alt="Beyond Ramen logo" width="100px">
+                    <h1></h1>
+                </a>
+            </div>
+            <nav>
+                <h2>Navigation</h2>
+                <img src="../assets/menu_black_24dp.svg" alt="Hambruger menu" id="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hide" id="exit" viewBox="-6 -6 24 24" width="24" fill="currentColor"><path d="M7.314 5.9l3.535-3.536A1 1 0 1 0 9.435.95L5.899 4.485 2.364.95A1 1 0 1 0 .95 2.364l3.535 3.535L.95 9.435a1 1 0 1 0 1.414 1.414l3.535-3.535 3.536 3.535a1 1 0 1 0 1.414-1.414L7.314 5.899z"></path></svg>
+                <p id="printOnly">
+                    https://www.public.asu.edu/~rkelton1/Recipe/code/recipe.html
+                </p>
+                <ul id="navUL">
+                    <a href="#" class="active"><li>Home</li></a>
+                    <a href="#"><li>Recipe Book</li></a>
+                    <a href="#"><li>Post A Recipe</li></a>
+                    <a href="#"><li>Sign up&#47 Login in</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="gridContainer">
+                <div id="heroImg">
+                    <img src="../Assets/hero-image.jpg" alt="college students">
+                </div>
+                <section id="introCTA">
+                    <p>Recipes for health conscious, busy, & budget minded young adults.</p>
+                    <p>Beyond Ramen is a social network for young adults seeking better food alternatives. The unfortunate choice of food for most college students is prepackaged ramen noodles! Join us in our pursuit for a healthier and tastier alternative. Take a look through our recipe book, or share your own favorite recipe.</p>
+                    <button class="CTA">Login/Sign Up</button>
+                </section>  
+                
+                <div id="reviewsTitle">Favorite Recipes</div>
+                <section id="reviews">
+                    <div id="arrowLeft">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <line x1="5" y1="12" x2="11" y2="18" />
+                            <line x1="5" y1="12" x2="11" y2="6" />
+                          </svg>
+                    </div>
+                    <div class="reviewContainer" id="review01">
+                        <a href="tunaCaper.html">Tuna Caper Pasta</a>
+                        <div class="stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        </div>
+                        <p>This is incredible! I had all of the ingredients already, so it was super easy to make.</p>
+                        <p>Review from Mike Scott</p>
+                    </div>
+                    <div class="reviewContainer hide" id="review02">
+                        <a href="tunaCaper.html">Hello</a>
+                        <div class="stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        </div>
+                        <p>This is incredible! I had all of the ingredients already, so it was super easy to make.</p>
+                        <p>Review from Mike Scott</p>
+                    </div>
+                    <div class="reviewContainer hide" id="review03">
+                        <a href="tunaCaper.html">Tuna Caper Pasta</a>
+                        <div class="stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                        </div>
+                        <p>This is incredible! I had all of the ingredients already, so it was super easy to make.</p>
+                        <p>Review from Mike Scott</p>
+                    </div>
+                    <div id="arrowRight">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <line x1="13" y1="18" x2="19" y2="12" />
+                            <line x1="13" y1="6" x2="19" y2="12" />
+                        </svg>
+                    </div>
+                </section>
+                
+                <section id="newRecipes" itemscope itemtype="https://schema.org/Recipe">
+                    <h3>New Recipes</h3>
+                    
+                    <!--jQuery to make div clickable. When .recipeCard is clicked the browser opens the a tag.-->
+                    <script>
+                        $(document).ready(function(){
+                            $(".recipeCard").click(function() {
+                                window.location = $(this).find("a").attr("href");
+                            });
+                        });
+                        
+                    </script>
+                    
+                    <!--Recipe 1-->
+                    <div class="recipeCard easy focusRecipe">
+                            <img src="../Assets/Recipe Images/Tuna.jpeg" alt="tuna caper" class="recipeImg">
+                            <div class="recipeInfo">
+                                <a href="tunaCaper.html" itemprop="name">Tuna and caper pasta with crispy breadcrumbs</a>
+                                <div class="quickFacts">
+                                    <p>#Lunch, #Dinner, #Quick & Easy</p>
+                                </div>
+                                <div class="stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <!--Recipe 2-->
+                    <div class="recipeCard medium">
+                        <img src="../Assets/Recipe Images/Soup.jpg" alt="autumn soup" class="recipeImg">
+                        <div class="recipeInfo">
+                            <a itemprop="name" href="#">Autumn Soup</a>
+                            <div class="quickFacts">
+                                <p>#Snack, #Lunch, #Quick & Easy</p>
+                            </div>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Recipe 3-->
+                    <div class="recipeCard hard">
+                        <img src="../Assets/Recipe Images/Pesto.jpg" alt="pesto pasta" class="recipeImg">
+                        <div class="recipeInfo">
+                            <a itemprop="name" href="#">Pesto Pasta</a>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            </div>
+                            <div class="quickFacts">
+                                <p>#Lunch, #Dinner, #Moderate</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Recipe 4-->
+                    <div class="recipeCard easy">
+                        <img src="../Assets/Recipe Images/Meatball.jpg" alt="mini meatball salad" class="recipeImg">
+                        <div class="recipeInfo">
+                            <a itemprop="name" href="#">Mini Meatball Salad</a>
+                            <div class="quickFacts">
+                                <p>#Snack, #Quick % Easy</p>
+                            </div>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Recipe 5-->
+                    <div class="recipeCard easy">
+                        <img src="../Assets/Recipe Images/Toast.jpg" alt="avocado egg toast" class="recipeImg">
+                        <div class="recipeInfo">
+                            <a itemprop="name" href="#">Avocado and egg toast</a>
+                            <div class="stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" fill="#FFA700"><path d="M10 16.207l-6.173 3.246 1.179-6.874L.01 7.71l6.902-1.003L10 .453l3.087 6.254 6.902 1.003-4.995 4.869 1.18 6.874z"></path></svg>
+                            </div>
+                            <div class="quickFacts">
+                                <p>#Breakfast, #Quick & Easy</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <small>&copy; 2022 Ryan Kelton</small>
+                <p><b>Proof of Concept</b></p>
+                <p>Recipe taken from 
+                    <a href="https://www.delicious.com.au/recipes/tuna-caper-pasta-crispy-breadcrumbs-recipe/m6nfpnbl?r=recipes/collections/1vo4q819" target="_blank">Phoebe Wood</a> 
+                </p>
+        </footer>
+    </body>
+</html>

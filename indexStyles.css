@@ -1,0 +1,343 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Green: #6B9B03;
+    --Border: #C5C5C5;
+    --Black: #29282F;
+    --BG-2: #F5F5F5;
+    --BG: #FCFCFC;
+}
+html{
+    font-size: 16px;
+    font-family: "Highgate", sans-serif;
+    color: var(--Black);
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--BG);
+}
+a{
+    color: var(--Black);
+    text-decoration: underline;
+    transition: ease-in-out(.5s);
+}
+a:hover{
+    transform-origin: center;
+    transform:scale(1.01);
+}
+h2, nav ul, #printOnly{
+    display: none;
+}
+button{
+    font-family: "Highgate", sans-serif;
+    font-weight: 500;
+    border: none;
+    font-size: 17px;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 5px;
+    background-color: var(--Green);
+}
+.active{
+    font-weight: 700;
+}
+
+/*--Header--*/
+header{
+    display: flex;
+    padding: 1rem 2rem;
+    border-bottom: 2.5px solid var(--Border);
+}
+#logo{
+    display: inline-flex;
+    align-items: center;
+    flex-grow: 2;
+}
+#logo h1{
+    padding-left: .75rem;
+    font-size: 1.5rem;
+}
+#logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+nav{
+    display: inline-flex;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+}
+.hamburgerActive{
+    display: block;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    background-color: var(--BG);
+    width: 100%;
+    padding: 2rem;
+    transition: ease-in-out;
+}
+.hamburgerActive li{
+    padding: 10px;
+}
+/*--End Header--*/
+
+/*--Grid Container--*/
+#gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "heroImg"
+        "introCTA"
+        "reviewsTitle"
+        "reviews"
+        "newRecipes"
+    ;
+}
+/*--End Grid Container--*/
+
+/*--Hero Image and Intro Text--*/
+#heroImg{
+    grid-area: heroImg;
+    max-height: 450px;
+}
+#heroImg img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+#introCTA{
+    padding: 2rem;
+    grid-area: introCTA;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    max-width: 600px;
+}
+#introCTA p:first-of-type{
+    font-size: 2rem;
+    font-weight: 900;
+}
+#introCTA p:last-of-type{
+    margin-top: 1rem;
+}
+.CTA{
+    margin-top: 30px;
+}
+.CTA:hover{
+    cursor: pointer;
+}
+/*--End Hero Image and Intro Text--*/
+
+/*--Favorite Recipes (Reviews)--*/
+#reviewsTitle{
+    font-weight: 700;
+    background-color: var(--BG-2);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: reviewsTitle;
+    border-bottom: 1px solid var(--Border);
+    margin-top: 2rem;
+}
+#reviews{
+    grid-area: reviews;
+    background-color: var(--BG-2);
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.reviewContainer{
+    max-width: 350px;
+    padding: 0 1rem;
+}
+#reviews p:first-child{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: .25rem;
+}
+.reviewContainer a:first-child{
+    text-decoration: none;
+    font-weight: 700;
+}
+.stars{
+    margin-top: 5px;
+}
+.reviewContainer p:last-child{
+    margin: 8px 0 1rem;
+    font-size: 0.9rem;
+}
+[id^="arrow"] {
+    cursor: pointer;
+}
+/*--End Favorite Recipes (Reviews)--*/
+
+/*--New Recipes--*/
+#newRecipes{
+    margin: 1rem 2rem;
+    grid-area: newRecipes;
+}
+#newRecipes a{
+    text-decoration: none;
+}
+#newRecipes a:hover{
+    text-decoration: underline;
+}
+#newRecipes h3{
+    margin: 1rem 0;
+}
+.recipeCard{
+    background-color: white;
+    height: 12rem;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    border: 1px solid var(--Border);
+}
+.recipeCard:hover{
+    box-shadow: 0px 0px 10px 10px rgba(116,116,116,0.05);
+}
+.recipeImg{
+    grid-column: 1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+.recipeInfo{
+    grid-column: 2;
+    padding: 1rem;
+    display: grid;
+    align-content: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.recipeInfo a{
+    font-weight: 700;
+}
+.recipeInfo>p:nth-child(2){
+    margin-top: 1em;
+}
+.quickFacts{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: .25rem;
+    font-size: .9rem;
+}
+/*--End New Recipes--*/
+
+/*--Footer--*/
+footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem;
+}
+small, footer p{
+    font-size: 1rem;
+    padding: 0 .5rem;
+}
+footer a{
+    color: var(--Green);
+    text-decoration: underline;
+}
+/*--End Footer--*/
+
+.hide{
+    display: none;
+}
+
+/*--Media Query's--*/
+@media screen and (min-width: 725px){
+    nav ul{
+        display: contents;
+        list-style: none;
+    }
+    ul a{
+        text-decoration: none;
+        padding-left: 1.25rem;
+    }
+    ul a:hover{
+        text-decoration: underline;
+    }
+    nav img{
+        display: none;
+    }
+
+    #newRecipes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-column-gap: 2rem;    
+    }
+    .recipeCard{
+        height: 10rem;
+    }
+    .focusRecipe{
+        height: 20rem;
+        grid-column: 1/-1;
+        grid-template-columns: 50%;
+        font-size: 1.25rem;
+    }
+}
+@media screen and (min-width: 1000px){
+    html{
+        font-size: 17px;
+    }
+    #gridContainer{
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas:
+            "heroImg heroImg heroImg introCTA introCTA introCTA"
+            "reviewsTitle reviewsTitle reviewsTitle reviewsTitle reviewsTitle reviewsTitle"
+            "reviews reviews reviews reviews reviews reviews"
+            "newRecipes newRecipes newRecipes newRecipes newRecipes newRecipes"
+        ;
+    }
+    #introCTA{
+        grid-area: introCTA;
+        color: var(--Black);
+        height: 400px;
+    }
+    #reviews{
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 0;
+        grid-column-gap: 2rem;
+        grid-row-gap: 12px;
+    }
+    #reviews p:first-child{
+        grid-row: 1;
+    }
+    .reviewContainer{
+        grid-row: 2;
+    }
+}
+@media screen and (min-width: 1250px){
+    header, #secondaryNav{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #newRecipes{
+        margin: 2rem 0 0;
+        padding: 0;
+    }
+}
